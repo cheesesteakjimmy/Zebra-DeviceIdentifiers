@@ -1,0 +1,11 @@
+*.suo
+*.user
+bin
+obj
+build
+packages
+StyleCop.Cache
+Resource.Designer.cs
+.vs/
+node_modules
+

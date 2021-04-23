@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>361474ee-fca9-4223-a598-12959c6ab3ce</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DeviceIdentifiersWrapper</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)EMessageType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDIResultCallbacks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DICommandBaseSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DICommandBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DIHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DIProfileManagerCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RetrieveOEMInfoTask.cs" />
+  </ItemGroup>
+</Project>
